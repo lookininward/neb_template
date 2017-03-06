@@ -1,0 +1,25 @@
+{
+  "name": "neb_template",
+  "version": "1.0.0",
+  "description": "Basic website template built using Bootstrap 4, Express, and NodeJS.",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lookininward/neb_template.git"
+  },
+  "keywords": [],
+  "author": "lookininward",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lookininward/neb_template/issues"
+  },
+  "homepage": "https://github.com/lookininward/neb_template#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "reload": "^1.1.1"
+  }
+}
