@@ -59,5 +59,12 @@ Run Server
 JS + Express
 - conditionals loops, combine data on routes and learn to control information flow 
 
+Relevant Links:
+- https://docs.npmjs.com/getting-started/using-a-package.json
+- http://getbootstrap.com/css/
+- http://getbootstrap.com/components/
+- http://www.embeddedjs.com/getting_started.html
+
+
 
 

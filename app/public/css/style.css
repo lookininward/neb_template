@@ -1,0 +1,22 @@
+#navbar {
+  background-color: #3097D1;
+  border: none;
+  border-radius: 0; }
+  #navbar a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.5; }
+    #navbar a:hover {
+      opacity: 1; }
+  #navbar .navbar-form {
+    margin: 10px 0 10px 0; }
+  #navbar #site-search {
+    border: 1px solid #1C73A5;
+    border-radius: 4px;
+    height: 30px; }
+    #navbar #site-search::-webkit-input-placeholder {
+      font-weight: 300;
+      letter-spacing: 1px; }
+
+/*# sourceMappingURL=style.css.map */
