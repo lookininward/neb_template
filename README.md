@@ -35,6 +35,7 @@ Expressjs [root folder]
  		- data.json [contains all text data files for project]
  	- public
  		- css
+ 		- scss
  		- images
  		- js
  	- routes
@@ -65,6 +66,11 @@ Relevant Links:
 - http://getbootstrap.com/components/
 - http://www.embeddedjs.com/getting_started.html
 
+
+To Do
+- JSON file containing blog posts
+- Create unique page for each
+- Create page with list blog posts
 
 
 

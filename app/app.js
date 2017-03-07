@@ -10,6 +10,7 @@ app.locals.siteTitle = 'Website Template';
 
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
+app.use(require('./routes/articles'));
 
 var server = app.listen(app.get('port'), function() {
 	console.log('Listening on port ' + app.get('port'));
