@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head><% include partials/template/head.ejs %></head>
   <body id="">
 
+    <!-- Navigation -->
+    <% include partials/template/navigation.ejs %>
+    
+
     <div class="container">
+
       <div class="row">
-        <div class="col-sm-8">
-            Hellooooooo 
+        <div class="col-sm-3">
+        <% include partials/template/leftsidebar.ejs %>
+
+        </div>
+
+        <div class="col-sm-6">
+        <% include partials/template/newsfeed.ejs %>
         </div><!-- primary -->
-        <aside class="col-sm-4">
-            sfasdfffff
-        </aside><!-- secondary -->
+
+        <div class="col-sm-3">
+        <% include partials/template/rightsidebar.ejs %>
+
+
+          
+        </div><!-- secondary -->
       </div>
     </div><!-- container -->
+    <% include partials/template/jsdefaults.ejs %>
   </body>
 </html>
