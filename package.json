@@ -4,7 +4,7 @@
   "description": "Basic website template built using Bootstrap 4, Express, and NodeJS.",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js"
+    "start": "nodemon -e css,ejs,js,json --watch app"
   },
   "repository": {
     "type": "git",

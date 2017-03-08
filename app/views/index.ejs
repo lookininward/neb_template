@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head><% include partials/template/head.ejs %></head>
-  <body id="">
+  <body id="<%= pageID %>">
 
     <!-- Navigation -->
     <% include partials/template/navigation.ejs %>
@@ -11,10 +11,10 @@
       <div class="row">
         <div class="col-sm-3">
         <% include partials/template/leftsidebar.ejs %>
-
         </div>
 
         <div class="col-sm-6">
+        Page Identify: <%= pageID %><br/>
         <% include partials/template/newsfeed.ejs %>
         </div><!-- primary -->
 
