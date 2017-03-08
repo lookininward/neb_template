@@ -1,5 +1,5 @@
 # neb_template
-Basic website template built using Bootstrap 4, Express, and NodeJS.
+Basic website template built using Bootstrap 3, Express, and NodeJS.
 
 [IN PROGRESS]
 
