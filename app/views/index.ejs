@@ -14,7 +14,13 @@
         </div>
 
         <div class="col-sm-6">
-        Page Identify: <%= pageID %><br/>
+        Page ID: <%= pageID %><br/>
+
+        <% allArticles.forEach(function(item) { %>
+            <a href="/articles/<%= item.shortname %>"><%= item.name %></a><br/>
+          <% }); %>
+
+        <br/>
         <% include partials/template/newsfeed.ejs %>
         </div><!-- primary -->
 
