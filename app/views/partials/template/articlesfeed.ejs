@@ -1,1 +1,34 @@
-What's up!!!!
+<ul class="list-group">
+  <li class="list-group-item"><h3>[Articles]</h3></li>
+  <% allArticles.forEach(function(item) { %>
+    <li class="list-group-item">
+    	<%= item.author %>
+      <a href=""><p><%= item.title %></p></a>
+    </li>
+	<% }); %>
+</ul>
+
+
+
+<h3>List of Authors</h3>
+<% authors.forEach(function(item) { %>
+<p><%= item %></p>
+<% }); %>
+
+
+<h3>List of Articles</h3>
+<% allArticles.forEach(function(item) { %>
+<p><%= item.title %></p>
+<% }); %>
+
+
+<h3>List of Articles + Their Articles</h3>
+<%= test %><br>
+
+
+  <% test.forEach(function(item) { %>
+    <li class="list-group-item">
+    	<%= item %>
+      <a href=""><p><%= item.title %></p></a>
+    </li>
+	<% }); %>

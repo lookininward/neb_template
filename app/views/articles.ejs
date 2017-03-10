@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head><% include partials/template/head.ejs %></head>
-  <body id="">
+  <body id="" onload="insertMessage()">
 
     <!-- Navigation -->
     <% include partials/template/navigation.ejs %>
@@ -11,12 +11,36 @@
       <div class="row">
   <!--       <div class="col-sm-3">
         <% include partials/template/leftsidebar.ejs %>
-
         </div> -->
 
         <div class="col-sm-6">
         <% include partials/template/articlesfeed.ejs %>
         </div><!-- primary -->
+        <br><br><br>
+        
+<!--         <script>
+        function insertMessage() {
+          var message = "\
+          <% allArticles.forEach(function(item) { %> \
+              <%= item.author %><br/> \
+             <%= item.title %></p>\
+          <% }); %>";
+
+          document.getElementById('test').innerHTML = message;
+
+        }
+
+        insertMessage();
+        </script> -->
+
+        <div id="test"></div>
+
+        <br/><br/>
+
+      
+
+
+      
 
      <!--    <div class="col-sm-3">
         <% include partials/template/rightsidebar.ejs %>
