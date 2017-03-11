@@ -1,23 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+
+// Create route to Articles Page
 router.get('/articles', function(req, res) {
 	var data = req.app.get('appData');
-	var allArticles = [];
+	
 
+	// Collect all articles and their inner attributes
+	var allArticles = [];
 	data.articles.forEach(function(item) {
 		allArticles = item.title;
 	});
 
-
-	// function pushIt() {
-	// 	test.push("Kevin");
-	// };
-
-	// pushIt();
-
-
-	
+	// Function to identify unique values in an array
 	function onlyUnique(value, index, self) {
 		return self.indexOf(value) === index;
 	}
@@ -41,9 +37,18 @@ router.get('/articles', function(req, res) {
 
 	// Create an array of articles for each unique author
 	
+	// function pushIt() {
+	// 	test.push("Kevin");
+	// };
 
+	// pushIt();
 
-
+	// function run() {
+	// 	allArticles.forEach(function(item) {
+	//       item.author;
+	//       item.title;
+	// 	});
+	// };
 
 	res.render('articles', {
 		pageTitle: 'Articles', 
@@ -53,5 +58,26 @@ router.get('/articles', function(req, res) {
 		test: byXavier
 	});
 });
+
+
+// Create route to individual articles pages
+
+// router.get('/articles/:articleid', function(req, res) {
+// 	var data = req.app.get('appData');
+
+// 	var articles = [];
+
+// 	data.articles.forEach(function(item) {
+// 		if (item.shortname == req.params.articleid) {
+// 			articles.push(item);
+// 		}
+// 	});
+
+// 	res.render('articles', {
+// 		pageTitle: 'Article Info',
+// 		articles: articles,
+// 		pageID: 'articleDetail'
+// 	});
+// });
 
 module.exports = router;
